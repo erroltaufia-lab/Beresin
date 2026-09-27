@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-jakarta);
+}
+
+@theme {
+  /* Workwear palette: graphite and warm paper, one hi-vis accent, one trust green. */
+  --color-paper: #f7f5f2;
+  --color-card: #ffffff;
+  --color-sunk: #eeeae4;
+  --color-ink: #17191c;
+  --color-steel: #5c636e;
+  --color-line: #e3ded7;
+  --color-line-firm: #cbc4b9;
+  --color-hivis: #e4572e;
+  --color-hivis-deep: #bf3f1d;
+  --color-verified: #0f7a5a;
+  --color-night: #1c242e;
+}
+
+body {
+  font-feature-settings: "ss01";
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- buttons ---- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.625rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.875rem 1.25rem;
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+}
+.btn:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
+.btn-primary {
+  background: var(--color-hivis);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: var(--color-hivis-deep);
+}
+.btn-dark {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+.btn-dark:hover {
+  background: var(--color-night);
+}
+.btn-ghost {
+  border: 1px solid var(--color-line-firm);
+  color: var(--color-ink);
+  background: transparent;
+}
+.btn-ghost:hover {
+  border-color: var(--color-ink);
+}
+.btn-sm {
+  padding: 0.5rem 0.875rem;
+  font-size: 0.875rem;
+}
+
+/* ---- surfaces ---- */
+.card {
+  background: var(--color-card);
+  border: 1px solid var(--color-line);
+  border-radius: 0.875rem;
+}
+
+.eyebrow {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-steel);
+}
+
+/* ---- status pills ---- */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  border-radius: 999px;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.pill-menunggu {
+  background: #fdf0d5;
+  color: #8a5a06;
+}
+.pill-dijadwalkan {
+  background: #dcecfb;
+  color: #17548c;
+}
+.pill-dikerjakan {
+  background: #fde4dc;
+  color: var(--color-hivis-deep);
+}
+.pill-selesai {
+  background: #d9f0e6;
+  color: var(--color-verified);
+}
+
+/* ---- forms ---- */
+.field {
+  width: 100%;
+  border: 1px solid var(--color-line-firm);
+  border-radius: 0.625rem;
+  background: var(--color-card);
+  padding: 0.75rem 0.875rem;
+  font-size: 0.9375rem;
+  color: var(--color-ink);
+}
+.field:focus {
+  outline: 2px solid var(--color-hivis);
+  outline-offset: -1px;
+  border-color: transparent;
+}
+.field::placeholder {
+  color: #9aa0a9;
+}
+
+.label {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-ink);
+  margin-bottom: 0.375rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
