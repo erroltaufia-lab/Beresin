@@ -8,13 +8,13 @@ that exists and runs.
 A marketplace for booking verified tradespeople (*tukang*) in Tangerang
 Selatan. Rebuilt from scratch on 27 September 2026 after the original source
 was confirmed lost. The evidence behind the rebuild is in
-`../BERESIN-HANDOFF.md` — read that first if you want to know what is genuine
+`BERESIN-RECOVERY.md` — read that first if you want to know what is genuine
 and what was invented.
 
 ## Run it
 
 ```bash
-cd ~/Downloads/recovered-apps/beresin && npm run dev
+cd ~/Documents/Claude/beresin && npm run dev
 ```
 
 Opens on **http://localhost:3200**. Port 3000 belongs to speaksmarter, so
@@ -91,4 +91,4 @@ which does not exist yet. Remove it the moment there is a real tukang flow.
 
 Published at https://claude.ai/artifact/UN1oVA3yE1ZCgK7JuMfVug — private until
 shared from that page's Share menu. Rebuild and republish with
-`../build-demos.sh beresin`.
+`./build-demo.sh`.

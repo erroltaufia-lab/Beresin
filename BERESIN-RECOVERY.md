@@ -95,7 +95,7 @@ No source code, no database, no screenshots, no design files. Specifically unkno
 
 | Location | Result |
 |---|---|
-| `~/Downloads/recovered-apps` | Only kalima, speaksmarter, halal-agency |
+| `recovered-apps` folder (then in Downloads, now `~/Documents/Claude/recovered-apps`) | Only kalima, speaksmarter, halal-agency |
 | Copied Claude Code transcripts in `~/Documents/.claude/projects` | Three project folders, none Beresin |
 | Codex history (`~/.codex`, logs, state, chatgpt-projects) | No mention |
 | Google Drive (errol.taufia@gmail.com), title and full-text | No match |
